@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #24abee;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+    }
+    .border{
+        /* border: 2px solid red; */
+    }
+    .align_center{
+        display: flex;
+        align-items: center;
+        /* align-content: center; */
+    }
+    
+    
+    #upperlef{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        width: 40%;
+    }
+    #weatherD,#weathday{
+        display: flex;
+        /* justify-content: space-between; */
+        width: 100%;
+        height: auto;
+        gap:5%;
+    }
+    #degVH4{
+        font-size: 70px;
+        /* border: 2px solid red; */
+    }
+
+    #lowCont{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 10%;
+
+    }
+    .onedaydiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #a6ddf8;
+        color: black;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+    #divforSer{
+        text-align: center;
+        /* margin-top: 80px; */
+    }
+    #form{
+        margin-top: 40px;
+    }
+    #upperdiv{
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+
+    }
+    #upperrig{
+        width: 60%;
+    }
+    #inp{
+        height: 40px;
+        width: 200px;
+        margin-right: 50px;
+        border-radius: 5px;
+        padding-left: 30px;
+        
+    }
+    #sub{
+        height: 40px;
+        width: 100px;
+        border-radius: 5px;
+    }
+    #hcityN{
+        margin-left:30%
+    }
+    #weatC{
+        margin-left:30%;
+        font-size: 30px;
+        
+    }
+    #dayU{
+        font-size: 30px;
+    }
+    #weathday{
+        /* margin-top: -60px; */
+        /* border: 2px solid red; */
+    }
+</style>
+
+<body>
+    <div id="divforSer">
+        <form id="form" action="">
+            <input id="inp" type="text" placeholder="City">
+            <input id="sub" type="submit" value="Search">
+        </form>
+    </div>
+    <div id="upperdiv">
+        <div class="border " id="upperlef">
+            <div class="border align_center" id="cityN">
+                <h3 id="hcityN"></h3>
+            </div>
+            <div class="border align_center" id="weatherD">
+                <div class="border " id="iU">
+                    <img id="iUImg" src="" alt="">
+                </div>
+                <div class="border " id="degV">
+                    <h4 id="degVH4"></h4>
+                </div>
+                <div class="border " id="degS">
+                    <p id="degSP"></p>
+                </div>
+                <div class="border " id="degUL">
+                    <div class="border " id="degU">
+                        <p id="degULP"></p>
+                    </div>
+                    <div class="border" id="degL">
+                        <p id="degLP"></p>
+                    </div>
+                </div>
+                <div class="border " id="PWH">
+                    <!-- <div id="P">
+                        <p id="PP"></p>
+                    </div> -->
+                    <div class="border" id="W">
+                        <p id="WP"></p>
+                    </div>
+                    <div class="border" id="D">
+                        <p id="DP"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border align_center" id="weathday">
+                <div class="border " id="weatC">
+                    <p id="weatCP"></p>
+                </div>
+                <div class="border align_center" id="dayU">
+                    <p id="dayUP"></p>
+                </div>
+            </div>
+        </div>
+        <div class="border align_center" id="upperrig">
+          <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas"
+                
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://123movies-to.org">123movies</a><br>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+            </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 800px;
+                }
+            </style>
+        </div>
+    </div>  
+        </div>
+
+    </div>
+    <div id="lowCont">
+       
+    </div>
+</body>
+
+</html>
+<script src="index.js">
+
+</script>
